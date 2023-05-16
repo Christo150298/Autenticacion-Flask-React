@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
+		<nav className="navbar navbar-light bg-warning">
+			<div className="container d-flex">
 				<Link to="/login">
 					<span className="navbar-brand mb-0 h1">Login</span>
 				</Link>
@@ -13,7 +13,7 @@ export const Navbar = () => {
 				</Link>
 				<div className="ml-auto">
 					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
+						<span className="navbar-brand">Demo</span>
 					</Link>
 				</div>
 			</div>

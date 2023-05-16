@@ -15,7 +15,7 @@ export const ContextProvider = ({ children }) => {
   const handleLoginButton = () => fetchLogin(loginMail, loginPass);
   const handlePrivateInfo = (handleOk) => fetchPrivate(handleOk);
   const handlePrivateData = (newData) => setPrivateData(newData);
-  const handleSingupButton = () => {fetchSignup(loginMail, loginPass)};
+  const handleSingupButton = () => {fetchSingup(loginMail, loginPass)};
   const handleLogoff = () => localStorage.removeItem("token");
 
   const store = { loginMail, loginPass ,privateData};
